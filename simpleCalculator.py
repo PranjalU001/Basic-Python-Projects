@@ -74,7 +74,7 @@ while True:
         x=int(input("enter the 1st num"))
         y=int(input("enter the 2nd num"))
         d=power(x,y)
-        print(f"THE POWER OF{a} IS TO BE {b} IS :")
+        print(f"THE POWER OF{x} IS TO BE {y} IS :")
 
     else:
         print("!<<--succesfully exit the calculator-->>!")
