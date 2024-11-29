@@ -1,0 +1,42 @@
+print("Enter Your Choice")
+print("Enter 1 For Sum ")
+print("Enter 2 For Sub ")
+print("Enter 3 For Mul ")
+print("Enter 4 For Div ")
+Choice = int(input("Enter 1 to 4 to use the Calculator: "))
+
+if Choice < 1 or Choice > 4:
+    print("Enter a Valid Choice Number")
+else:
+    class Calculator:
+        def __init__(self, a, b):
+            self.a = a
+            self.b = b
+
+        def Sum(self):
+            print("SUM is:", self.a + self.b)
+
+        def Sub(self):
+            print("SUBTRACTION is:", self.a - self.b)
+
+        def Mul(self):
+            print("MULTIPLICATION is:", self.a * self.b)
+
+        def Div(self):
+            if self.b == 0:
+                print("Division by zero is not allowed.")
+            else:
+                print("DIVISION is:", self.a / self.b)
+
+    num1 = int(input("Enter the first number: "))
+    num2 = int(input("Enter the second number: "))
+    a1 = Calculator(num1, num2)
+
+    if Choice == 1:
+        a1.Sum()
+    elif Choice == 2:
+        a1.Sub()
+    elif Choice == 3:
+        a1.Mul()
+    elif Choice == 4:
+        a1.Div()
