@@ -1,0 +1,98 @@
+### README for Calculator Program
+
+---
+
+## **Calculator Program**
+
+This Python program implements a simple command-line calculator. Users can perform basic arithmetic operations such as addition, subtraction, multiplication, and division.
+
+---
+
+### **Features**
+- Perform **Addition**, **Subtraction**, **Multiplication**, and **Division**.
+- Input validation to handle invalid choices.
+- Handles division by zero gracefully.
+
+---
+
+### **Usage Instructions**
+
+1. **Run the Program**  
+   Execute the Python script in your terminal or any Python IDE.
+
+2. **Choose an Operation**  
+   Select one of the following options:
+   - Enter `1` for Addition
+   - Enter `2` for Subtraction
+   - Enter `3` for Multiplication
+   - Enter `4` for Division
+
+3. **Input Numbers**  
+   Enter two numbers when prompted.
+
+4. **View Result**  
+   The program will display the result of the selected operation.
+
+5. **Invalid Inputs**  
+   If an invalid choice is entered, the program will prompt you to enter a valid choice.
+
+---
+
+### **Code Workflow**
+
+1. The user selects an operation from the displayed menu.
+2. The program validates the user's choice:
+   - If the choice is invalid (not between 1 and 4), an error message is displayed.
+   - If valid, the user is prompted to enter two numbers.
+3. The program performs the selected operation using the `Calculator` class and displays the result.
+
+---
+
+### **Example Run**
+
+```plaintext
+Enter Your Choice
+Enter 1 For Sum
+Enter 2 For Sub
+Enter 3 For Mul
+Enter 4 For Div
+Enter 1 to 4 to use the Calculator: 2
+Enter the first number: 10
+Enter the second number: 3
+SUBTRACTION is: 7
+```
+
+---
+
+### **Error Handling**
+- If the user enters an invalid choice, the program displays:  
+  `Enter a Valid Choice Number`
+- If division by zero is attempted, the program displays:  
+  `Division by zero is not allowed.`
+
+---
+
+### **Pre-requisites**
+- Python 3.x installed on your system.
+
+---
+
+### **How to Run**
+1. Save the script as `calculator.py`.
+2. Open a terminal or command prompt.
+3. Run the script using the command:
+   ```bash
+   python calculator.py
+   ```
+
+---
+
+### **Future Enhancements**
+- Add more operations like modulus, exponentiation, and square root.
+- Implement a graphical user interface (GUI).
+- Allow continuous operations without restarting the program.
+
+---
+
+**Author**: Pranjal Upadhyay   
+Feel free to modify and enhance the code as per your needs! 😊
