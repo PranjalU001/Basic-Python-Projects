@@ -1,0 +1,32 @@
+#Banking Management System
+This is a simple Python program for a Banking Management System that allows users to credit or debit money from their account while managing the total balance.
+
+##Features
+Credit Money: Add money to the account balance.
+Debit Money: Withdraw money from the account balance with a check for sufficient funds.
+Displays the updated balance after each transaction.
+##Requirements
+Python 3.x installed on your system.
+##How to Use
+Clone this repository or download the banking_management_system.py file.
+Run the program in a Python environment.
+Input the amount you want to credit or debit when prompted.
+View the updated balance after each transaction.
+##Code Overview
+balance: A global variable representing the account balance, initialized to 1,000,000.
+BankingManagementSystem:
+A class that encapsulates the credit and debit functionalities.
+##Methods:
+credit_money(): Adds the specified amount to the balance.
+debit_money(): Deducts the specified amount from the balance after checking for sufficient funds.
+##Sample Input/Output
+Input:
+Enter money you want to credit: 50000
+Enter money you want to debit: 20000
+Output:
+Your total balance is: 1050000
+Your left balance is: 1030000
+##Future Enhancements
+Add a user authentication system.
+Store transaction history.
+Implement a graphical user interface (GUI).
