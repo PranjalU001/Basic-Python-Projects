@@ -1,0 +1,26 @@
+balance = 1000000
+
+class BankingManagementSystem:
+    def __init__(self, credit, debit):
+        self.credit = credit
+        self.debit = debit
+    
+    def credit_money(self):
+        global balance
+        balance += self.credit
+        print("Your total balance is:", balance)
+    
+    def debit_money(self):
+        global balance
+        if self.debit > balance:
+            print("Insufficient funds! Debit not possible.")
+        else:
+            balance -= self.debit
+            print("Your left balance is:", balance)
+b1 = BankingManagementSystem(
+    int(input("Enter money you want to credit: ")), 
+    int(input("Enter money you want to debit: "))
+)
+
+b1.credit_money()
+b1.debit_money()
